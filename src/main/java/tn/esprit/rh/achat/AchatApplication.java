@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-@EnableScheduling
+
 @SpringBootApplication
 public class AchatApplication {
 
