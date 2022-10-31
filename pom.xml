@@ -54,17 +54,7 @@
 			<version>3.0.0</version>
 		</dependency>
 		
-		<dependency>
-		      <groupId>org.quartz-scheduler</groupId>
-    		      <artifactId>quartz</artifactId>
-   		      <version>${quartz.version}</version>
-		      <exclusions>
-			<exclusion>
-			  <groupId>tn.esprit.rh</groupId>
-			  <artifactId>c3p0</artifactId>
-			</exclusion>
-		      </exclusions>
-		</dependency>
+		
                       
 			      
 
