@@ -55,7 +55,7 @@
 		</dependency>
 
 	</dependencies>
-	<repository>
+	<repositories>
 		<repository>
     			<id>com.springsource.repository.bundles.release</id>
     			<name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name>
@@ -66,7 +66,7 @@
     			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
     			<url>http://repository.springsource.com/maven/bundles/external</url>
 		</repository>
-	</repository>
+	</repositories>
 	
 	<build>
 		<plugins>
