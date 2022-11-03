@@ -5,17 +5,16 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.3</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<version>2.5.13</version>
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>tn.esprit.rh</groupId>
-	<artifactId>achat</artifactId>
+	<groupId>projet.spring</groupId>
+	<artifactId>Clinique</artifactId>
 	<version>1.0</version>
-	<name>achat</name>
-	<description>Projet pour le module DevOps</description>
+	<name>Clinique</name>
+	<description>API REST du projet gestion de stock</description>
 	<properties>
 		<java.version>1.8</java.version>
-		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -26,7 +25,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId> springfox-boot-starter </artifactId>
+			<version> 3.0.0 </version>
+	  </dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -42,44 +52,9 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-boot-starter</artifactId>
-			<version>3.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>3.0.0</version>
-		</dependency>
-
 	</dependencies>
-	<repositories>
-		<repository>
-			 <id>org.springframework.maven.release</id>
-			 <name>Spring Maven Release Repository</name>
-			 <url>http://repo.springsource.org/libs-release-local</url>
-			 <releases><enabled>true</enabled></releases>
-			 <snapshots><enabled>false</enabled></snapshots>
-		</repository>
-                  <!-- For testing against latest Spring snapshots -->
-		<repository>
-   			 <id>org.springframework.maven.snapshot</id>
-		         <name>Spring Maven Snapshot Repository</name>
-		         <url>http://repo.springsource.org/libs-snapshot-local</url>
-	                 <releases><enabled>false</enabled></releases>
-		         <snapshots><enabled>true</enabled></snapshots>
-                </repository>
-<!-- For developing against latest Spring milestones -->
-		<repository>
-			  <id>org.springframework.maven.milestone</id>
-			  <name>Spring Maven Milestone Repository</name>
-			  <url>http://repo.springsource.org/libs-milestone-local</url>
-			  <snapshots><enabled>false</enabled></snapshots>
-		</repository>
-	</repositories>
-	
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -96,7 +71,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	
 
 </project>
