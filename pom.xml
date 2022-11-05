@@ -62,9 +62,16 @@
 		
 
 	</dependencies>
+	
+
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupld>org.apache.maven.plugins</groupld>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+	 		</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
