@@ -68,7 +68,7 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupld>org.apache.maven.plugins</groupld>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.1.0</version>
 	 		</plugin>
